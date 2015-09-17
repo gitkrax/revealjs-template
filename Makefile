@@ -6,7 +6,8 @@ TRANSITION = fade
 PREFIX = %userprofile%\AppData\Roaming\pandoc
 
 ## Location of your working bibliography file
-BIBFOLDER = C:/MyTemp/Dropbox/Bibtex/ ## Change to the actual folder holding your .bib-file
+## Change to the actual folder holding your .bib-file
+BIBFOLDER = C:/MyTemp/Dropbox/Bibtex
 BIB = $(BIBFOLDER)/library.bib
 
 ## CSL stylesheet (located in the csl folder of the PREFIX directory).
