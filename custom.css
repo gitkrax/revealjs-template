@@ -2,4 +2,9 @@
     .reveal h1 { font-size: 2.0em; }
     .reveal h2 { font-size: 1.5em; }
     .reveal .references { font-size: 0.5em; text-align: left; }
+    .reveal section img {
+     	margin: 15px 0px;
+     	background: rgba(255, 255, 255, 0.12);
+	    border: 4px none #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 </style>
