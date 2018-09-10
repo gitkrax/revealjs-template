@@ -31,7 +31,7 @@ all:	$(REVEALJS)
 revealjs:	$(REVEALJS)
 
 %.revealjs.html: %.md $(IMG)
-	pandoc -s -S --toc --toc-depth=1 --self-contained -t revealjs --filter pandoc-citeproc --bibliography=$(BIB) --variable=locale:$(LOCALE) --variable=theme:$(THEME) --include-in-header=custom.css --variable=transition:$(TRANSITION) -o $@ $<
+	pandoc --self-contained --toc --toc-depth=1 --self-contained -t revealjs --filter pandoc-citeproc --bibliography=$(BIB) --variable=locale:$(LOCALE) --variable=theme:$(THEME) --include-in-header=custom.css --variable=transition:$(TRANSITION) -o $@ $<
 
 .PHONY : clean
 clean:
