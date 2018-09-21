@@ -7,4 +7,5 @@
      	background: rgba(255, 255, 255, 0.12);
 	    border: 4px none #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+    .reveal .references { font-size: 0.5em; text-align: left; }
 </style>
