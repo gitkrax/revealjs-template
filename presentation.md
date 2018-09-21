@@ -13,4 +13,4 @@ locale:
 
 ## Image copyright
 
-## References
+## References {.references}
