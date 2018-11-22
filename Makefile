@@ -3,11 +3,11 @@ THEME = black
 TRANSITION = fade
 
 ## Location of Pandoc support files.
-PREFIX = %userprofile%\AppData\Roaming\pandoc
+PREFIX = ~/.pandoc
 
 ## Location of your working bibliography file
 ## Change to the actual folder holding your .bib-file
-BIBFOLDER = C:/MyTemp/Dropbox/Bibtex
+BIBFOLDER = /Users/joolarjo/.pandoc
 BIB = $(BIBFOLDER)/library.bib
 
 ## CSL stylesheet (located in the csl folder of the PREFIX directory).
@@ -31,8 +31,8 @@ all:	$(REVEALJS)
 revealjs:	$(REVEALJS)
 
 %.revealjs.html: %.md $(IMG)
-	pandoc --self-contained --toc --toc-depth=1 --self-contained -t revealjs --filter pandoc-citeproc --bibliography=$(BIB) --variable=locale:$(LOCALE) --variable=theme:$(THEME) --include-in-header=custom.css --variable=transition:$(TRANSITION) -o $@ $<
+	pandoc --self-contained -t revealjs --filter pandoc-citeproc --bibliography=$(BIB) --variable=locale:$(LOCALE) --variable=theme:$(THEME) --include-in-header=custom.css --variable=transition:$(TRANSITION) -o $@ $<
 
 .PHONY : clean
 clean:
-	del /f /q *.revealjs.html
+	rm *.revealjs.html
