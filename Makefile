@@ -8,7 +8,7 @@ PREFIX = ~/.pandoc
 ## Location of your working bibliography file
 ## Change to the actual folder holding your .bib-file
 BIBFOLDER = /Users/joolarjo/.pandoc
-BIB = $(BIBFOLDER)/library.bib
+BIB = $(BIBFOLDER)/default.bib
 
 ## CSL stylesheet (located in the csl folder of the PREFIX directory).
 CSL = chicago-author-date
